@@ -30,16 +30,16 @@ public class Game {
 		leftAction = new LeftAction();
 		rightAction = new RightAction();
 		
-		label.getInputMap().put(KeyStroke.getKeyStroke("UP"), upAction);
+		label.getInputMap().put(KeyStroke.getKeyStroke("UP"), "upAction");
 		label.getActionMap().put("upAction", upAction);
 		
-		label.getInputMap().put(KeyStroke.getKeyStroke("DOWN"), downAction);
+		label.getInputMap().put(KeyStroke.getKeyStroke("DOWN"), "downAction");
 		label.getActionMap().put("downAction", downAction);
 		
-		label.getInputMap().put(KeyStroke.getKeyStroke("LEFT"), leftAction);
+		label.getInputMap().put(KeyStroke.getKeyStroke("LEFT"), "leftAction");
 		label.getActionMap().put("leftAction", leftAction);
 		
-		label.getInputMap().put(KeyStroke.getKeyStroke("RIGHT"), rightAction);
+		label.getInputMap().put(KeyStroke.getKeyStroke("RIGHT"), "rightAction");
 		label.getActionMap().put("rightAction", rightAction);
 		
 		frame.add(label);
