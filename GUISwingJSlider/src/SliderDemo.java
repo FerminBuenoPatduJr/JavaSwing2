@@ -13,6 +13,7 @@ public class SliderDemo implements ChangeListener{
 	SliderDemo(){
 		
 		frame = new JFrame("Slider Demo");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		panel = new JPanel();
 		label = new JLabel();
 		slider = new JSlider(0, 100, 50	);
@@ -25,8 +26,15 @@ public class SliderDemo implements ChangeListener{
 		slider.setPaintTrack(true);
 		slider.setMajorTickSpacing(25);
 		
-		slider.setPaintLabels(true);
+		slider.setPaintLabels(true);//label 
 		slider.setFont(new Font("MV Boli", Font.PLAIN, 15));
+		
+		slider.setOrientation(SwingConstants.VERTICAL);//orientation
+		
+		label.setText("ºC = " + slider.getValue());
+		label.setFont(new Font("MV Boli", Font.PLAIN, 25));
+		
+		slider.addChangeListener(this);
 		
 		panel.add(slider);
 		panel.add(label);
@@ -40,6 +48,9 @@ public class SliderDemo implements ChangeListener{
 	@Override
 	public void stateChanged(ChangeEvent e) {
 		// TODO Auto-generated method stub
+		
+		label.setText("ºC = " + slider.getValue());
+		
 		
 	}
 }
