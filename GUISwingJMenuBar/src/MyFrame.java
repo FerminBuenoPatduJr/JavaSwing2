@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -20,11 +21,20 @@ public class MyFrame  extends JFrame implements ActionListener{
 	JMenuItem saveItem;
 	JMenuItem exitItem;
 	
+	ImageIcon loadIcon;
+	ImageIcon saveIcon;
+	ImageIcon exitIcon;
+	
 	MyFrame(){
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(500, 500);
 		this.setLayout(new FlowLayout());
 		//this.pack();
+		
+		
+		loadIcon = new ImageIcon("load1.png");
+		saveIcon = new ImageIcon("save1.jpg");
+		exitIcon = new ImageIcon("exit1.png");
 		
 		menuBar = new JMenuBar();
 		
@@ -40,6 +50,10 @@ public class MyFrame  extends JFrame implements ActionListener{
 		loadItem.addActionListener(this);
 		saveItem.addActionListener(this);
 		exitItem.addActionListener(this);
+		
+		loadItem.setIcon(loadIcon);
+		saveItem.setIcon(saveIcon);
+		exitItem.setIcon(exitIcon);
 		
 		fileMenu.setMnemonic(KeyEvent.VK_F);
 		editMenu.setMnemonic(KeyEvent.VK_E);
