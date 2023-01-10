@@ -7,13 +7,16 @@ import javax.swing.JFrame;
 
 public class MyFrame extends JFrame implements ActionListener{
 	
+	JComboBox comboBox;
+	
 	MyFrame(){
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new FlowLayout());
 		
 		String[] animals = {"dog", "cat", "bird","pig", "giraffe", "lion", "tiger"};
 		
-		JComboBox comboBox = new JComboBox(animals);
+		comboBox = new JComboBox(animals);
+		comboBox.addActionListener(this);
 		
 		this.add(comboBox);
 		this.pack();
@@ -23,6 +26,9 @@ public class MyFrame extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		if (e.getSource()==comboBox) {
+			System.out.println(comboBox.getSelectedIndex());
+		}
 		
 	}
 
