@@ -4,6 +4,7 @@ import javax.swing.*;
 public class ProgressBarDemo {
 	
 	JFrame frame = new JFrame();
+	//JProgressBar bar = new JProgressBar(0, 500);
 	JProgressBar bar = new JProgressBar();
 	
 	ProgressBarDemo(){
@@ -26,8 +27,10 @@ public class ProgressBarDemo {
 	}
 	
 	public void fill() {
+	//	int counter = 500;
 		int counter = 0;
 		
+	//	while(counter > 0) {
 		while(counter <= 100) {
 			bar.setValue(counter);
 			try {
