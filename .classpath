@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="GUISwingBorderLayout/src"/>
+	<classpathentry kind="src" path="GUISwingButton/src"/>
+	<classpathentry kind="src" path="GUISwingFlowLayout/src"/>
+	<classpathentry kind="src" path="GUISwingFrame/src"/>
+	<classpathentry kind="src" path="GUISwingGridLayout/src"/>
+	<classpathentry kind="src" path="GUISwingJCheckBox/src"/>
+	<classpathentry kind="src" path="GUISwingJComboBox/src"/>
+	<classpathentry kind="src" path="GUISwingJLayeredPane/src"/>
+	<classpathentry kind="src" path="GUISwingJOptionPane/src"/>
+	<classpathentry kind="src" path="GUISwingJRadioButton/src"/>
+	<classpathentry kind="src" path="GUISwingJTextField/src"/>
+	<classpathentry kind="src" path="GUISwingLabel/src"/>
+	<classpathentry kind="src" path="GUISwingNewWindow/src"/>
+	<classpathentry kind="src" path="GUISwingPanel/src"/>
+	<classpathentry kind="output" path="GUISwingBorderLayout/bin"/>
+</classpath>
