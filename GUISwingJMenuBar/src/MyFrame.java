@@ -1,6 +1,7 @@
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -39,6 +40,14 @@ public class MyFrame  extends JFrame implements ActionListener{
 		loadItem.addActionListener(this);
 		saveItem.addActionListener(this);
 		exitItem.addActionListener(this);
+		
+		fileMenu.setMnemonic(KeyEvent.VK_F);
+		editMenu.setMnemonic(KeyEvent.VK_E);
+		helpMenu.setMnemonic(KeyEvent.VK_H);
+		
+		loadItem.setMnemonic(KeyEvent.VK_L);
+		saveItem.setMnemonic(KeyEvent.VK_S);
+		exitItem.setMnemonic(KeyEvent.VK_X);
 		
 		fileMenu.add(loadItem);
 		fileMenu.add(saveItem);
